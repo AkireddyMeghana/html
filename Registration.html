@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration page</title>
+    <style>
+        body{
+            background-image: url("img/regisimage.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-size: larger;
+            font-family:'Times New Roman', Times, serif;
+            font-style: normal;
+            text-align:justify;
+        }
+    </style>
+    
+</head>
+<body align="center">
+        <form style="padding:30px 190px;" method="post" action="1.html" onsubmit=" return validate()">
+                <label >UserId: </label><br>
+                <input type="" class="form-control"id="Myform" readonly required><br><br>
+                <label >Username:</label><br>
+                <input type="text" class="form-control" id="name1" minlength="6" name="username" required><br><br>
+                <label >Password:</label><br>
+                <input type="password"  class="form-control" id="pass1"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" required><br><br>
+                <label >Repeat Password:</label><br>
+                <input type="password"  class="form-control" id="pass2" name="repeat-password" required><br><br>
+                <label >Date of Birth:</label><br>
+                <input type="date" class="form-control" id="dob1" name="dob" ><br><br>
+                <label >Address:</label><br>
+                <textarea class="form-control"name="address" id="address1"></textarea><br><br>
+                <label >Education Qualification:</label><br>
+                <select id="ed1">
+                <option value="ssc" >ssc</option>
+                <option value="intermediate" >intermediate</option>
+                <option value="diploma" >diploma</option>
+                <option value="b.tech" >b.tech</option>
+                <option value="m.tech" >m.tech</option>
+                </select><br></br>
+                <label >list of certification:</label><br>
+                <input type="text"  class="form-control" name="list" id="list1"><br><br>
+                <input type="submit" value="submit" required>
+                <input type="reset" value="reset" required><br></br>
+            </form>
+<script src="Regis.js"></script>
+</body>
+</html>
